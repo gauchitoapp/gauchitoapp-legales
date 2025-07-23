@@ -2,13 +2,159 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>GauchitoApp - Legales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legales - GauchitoApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #b71c1c;
+    }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #b71c1c;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .small {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; max-width: 600px; margin: auto; padding: 2rem;">
+<body>
   <h1>Bienvenido a la sección legal de GauchitoApp</h1>
-  <ul>
-    <li><a href="terminos.html">Términos y Condiciones</a></li>
-    <li><a href="privacidad.html">Política de Privacidad</a></li>
-  </ul>
+
+  <nav>
+    <a onclick="showSection('terminos')">Términos y Condiciones</a>
+    <a onclick="showSection('privacidad')">Política de Privacidad</a>
+  </nav>
+
+  <section id="terminos" class="section active">
+    <h2>Términos y Condiciones de GauchitoApp</h2>
+    <p class="small">Última actualización: 22/07/2025</p>
+
+    <h3>1. Uso de la app</h3>
+    <p>GauchitoApp es una aplicación creada para fomentar la fe, la devoción y el respeto hacia el Gauchito Gil. Podés compartir intenciones, encender velas virtuales, comentar publicaciones y conectarte con una comunidad creyente.</p>
+    <p>El uso es personal y no comercial. No podés usar la app para vender productos, enviar spam o realizar actividades fuera del espíritu de la comunidad.</p>
+
+    <h3>2. Reglas de convivencia</h3>
+    <p>Está prohibido publicar contenido ofensivo, violento, discriminatorio o que falte el respeto a otros usuarios o al Gauchito Gil.</p>
+    <p>Solo se permite una cuenta por dispositivo.</p>
+    <p>Si eliminás tu cuenta o es bloqueada por mal comportamiento, no podrás crear otra.</p>
+    <p>Nos reservamos el derecho de suspender o eliminar cuentas que violen estas reglas.</p>
+
+    <h3>3. Velas y colaboraciones</h3>
+    <p>Las velas gratuitas están sujetas a condiciones de uso. No se pueden solicitar en exceso ni simular actividad para obtener más.</p>
+    <p>Las velas pagas o colaborativas al igual que las medallas, son 100% virtuales y se representan de forma simbólica dentro de la app. No representan objetos físicos ni se enviarán elementos reales.</p>
+    <p>Las colaboraciones no son reembolsables.</p>
+
+    <h3>4. Contenido generado por usuarios</h3>
+    <p>Sos responsable del contenido que compartís (intenciones, comentarios, imágenes). Nos reservamos el derecho de eliminar contenido que infrinja estos términos o genere conflictos dentro de la comunidad.</p>
+
+    <h3>5. Privacidad</h3>
+    <p>Respetamos tu privacidad. Para saber cómo usamos tus datos, consultá nuestra Política de Privacidad.</p>
+
+    <h3>6. Ubicación y servicios especiales</h3>
+    <p>Ciertos servicios (como encendido real de velas en el santuario) pueden estar disponibles solo para usuarios fuera de Argentina.</p>
+
+    <h3>7. Responsabilidad</h3>
+    <p>La app se ofrece “tal como está”. No garantizamos disponibilidad continua ni resultados específicos.</p>
+
+    <h3>8. Cambios</h3>
+    <p>Podemos actualizar estos términos. Si los cambios son importantes, te lo notificaremos dentro de la app.</p>
+
+    <h3>9. Contacto</h3>
+    <p>Si tenés dudas, escribinos a gauchitoapp@gmail.com.</p>
+  </section>
+
+  <section id="privacidad" class="section">
+    <h2>Política de Privacidad de GauchitoApp</h2>
+    <p class="small">Última actualización: 22/07/2025</p>
+
+    <h3>1. Datos que recopilamos</h3>
+    <p>Al crear una cuenta o usar la app, podemos recopilar la siguiente información:</p>
+    <ul>
+      <li>Datos de cuenta: nombre, apellido, fecha de cumpleaños, número de celular, dirección, correo electrónico, imagen de perfil.</li>
+      <li>Datos de actividad: intenciones publicadas, posteos, compras, colaboraciones, comentarios, likes, velas encendidas.</li>
+      <li>Datos del dispositivo: modelo, sistema operativo, idioma.</li>
+      <li>Ubicación aproximada: solo al iniciar sesión, para habilitar funciones específicas según tu país.</li>
+      <li>Datos de pago o colaboración: si realizás un aporte o compra.</li>
+    </ul>
+
+    <h3>2. ¿Para qué usamos tus datos?</h3>
+    <ul>
+      <li>Para permitir el funcionamiento de la app y sus funciones.</li>
+      <li>Para mantener un ambiente seguro y respetuoso.</li>
+      <li>Para mostrar contenido relevante según tu ubicación.</li>
+      <li>Para estadísticas internas que nos ayuden a mejorar la experiencia.</li>
+      <li>Para enviarte notificaciones si lo permitís.</li>
+      <li>Para verificar colaboraciones manuales en caso de que nos envíes un comprobante bancario.</li>
+    </ul>
+
+    <h3>3. ¿Con quién compartimos tus datos?</h3>
+    <p>No vendemos ni alquilamos tus datos personales. Podemos compartirlos con servicios externos que usamos para operar la app, como:</p>
+    <ul>
+      <li><strong>Firebase Cloud Messaging:</strong> lo usamos exclusivamente para el envío de notificaciones push. No usamos Firebase para autenticación ni análisis de datos.</li>
+      <li><strong>Cloudinary:</strong> lo usamos para almacenar imágenes subidas por los usuarios.</li>
+      <li><strong>Transferencias bancarias:</strong> si colaborás con una intención o servicio, los aportes se hacen por transferencia bancaria directa a un CBU/Alias publicado. Si enviás un comprobante, puede contener datos personales como tu nombre, CBU o alias bancario, que serán tratados de forma confidencial.</li>
+    </ul>
+
+    <p>Estas empresas tienen sus propias políticas de privacidad y cumplen con medidas de seguridad adecuadas.</p>
+
+    <h3>4. Tus derechos</h3>
+    <p>Podés:</p>
+    <ul>
+      <li>Acceder a los datos que tenemos sobre vos.</li>
+      <li>Solicitar la corrección o eliminación de tus datos.</li>
+      <li>Eliminar tu cuenta en cualquier momento desde la app.</li>
+    </ul>
+    <p>Para ejercer estos derechos, escribinos a gauchitoapp@gmail.com.</p>
+
+    <h3>5. Seguridad</h3>
+    <p>Aplicamos medidas técnicas y organizativas para proteger tus datos. Aun así, ningún sistema es 100% seguro, por lo que no podemos garantizar seguridad absoluta.</p>
+
+    <h3>6. Uso por menores de edad</h3>
+    <p>GauchitoApp no está dirigida a menores de 14 años. Si detectamos que se ha creado una cuenta con una edad inferior, será eliminada.</p>
+
+    <h3>7. Cambios en esta política</h3>
+    <p>Podemos actualizar esta política en el futuro. Si los cambios son importantes, te lo notificaremos dentro de la app.</p>
+
+    <h3>8. Nota aclaratoria</h3>
+    <p>Todas las funcionalidades ofrecidas por GauchitoApp (como velas, intenciones y medallas) son digitales y simbólicas. No se entregan objetos físicos ni recompensas materiales.</p>
+
+    <h3>9. Contacto</h3>
+    <p>Si tenés dudas o reclamos sobre esta política, escribinos a gauchitoapp@gmail.com.</p>
+  </section>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
