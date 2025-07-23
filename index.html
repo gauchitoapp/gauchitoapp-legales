@@ -29,6 +29,21 @@
       color: #b71c1c;
       font-weight: bold;
       cursor: pointer;
+      padding: 6px 12px;
+      border-radius: 6px;
+      background-color: #fce4ec;
+      transition: background-color 0.3s, color 0.3s;
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: #b71c1c;
+      color: white;
+      outline: none;
     }
 
     .section {
@@ -49,8 +64,12 @@
   <h1>Bienvenido a la sección legal de GauchitoApp</h1>
 
   <nav>
-    <a onclick="showSection('terminos')">Términos y Condiciones</a>
-    <a onclick="showSection('privacidad')">Política de Privacidad</a>
+    <a onclick="showSection('terminos')" role="button" tabindex="0" aria-label="Mostrar Términos y Condiciones">
+      📄 Términos y Condiciones
+    </a>
+    <a onclick="showSection('privacidad')" role="button" tabindex="0" aria-label="Mostrar Política de Privacidad">
+      🔒 Política de Privacidad
+    </a>
   </nav>
 
   <section id="terminos" class="section active">
